@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Sofia Sans", sans-serif;
+}
+/*!-- HEADER -- */
+
+/*
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #009ee3;
+}
+
+header h1{
+    font-size: 70px;
+    font-weight: 900;
+    font-style: bold;
+    color: white;
+    text-align: center;
+}
+
+header nav ul{
+    max-width: 100%;
+    list-style: none;
+    margin:0 auto;
+    padding: 0;
+	text-align:center;
+    border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+}
+
+header nav ul li:hover{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    color: #69c8f2;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align:middle;
+} */
+
+
+.navbar-logo{
+    width: 280px;
+}
+
+
+navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+nav .nav-link{
+    color: #ffffff;
+}
+
+
+
+
+/*?-- MAIN --*/
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    margin-top: 80px;
+    background-image: url(../img/sportivo-barracas-fc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.hero-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 4px solid #ffffff;
+    width: 80%;
+    padding: 20px;
+    height: auto;
+    background-color: #fff8;
+    flex-wrap: wrap;
+
+}
+
+
+.hero h2{
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    filter: drop-shadow(0 2px 2px rgba(255,255,255,.5));
+}
+
+.hero a{
+    text-decoration: none;
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #009ee3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 25px;
+}
+
+.hero a:hover{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: #053549;
+}
+
+.hero img{
+    width: 200px;
+    padding-top: 20px;
+    filter: drop-shadow(0 8px 5px rgba(0,0,0,.3));
+}
+
+
+
+
+.biografia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    background-image: url(../img/cancha-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.biografia div{
+    width: 50%;
+}
+
+.biografia img{
+    width: 300px;
+}
+
+.biografia div h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #ffffff;
+    text-align: left;
+}
+
+.biografia div p{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 140%;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+
+
+.subtitulos-temas{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #009ee3;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.historia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 120px;
+}
+
+.historia div{
+    width: 50%;
+}
+
+.historia img{
+    width: 350px;
+}
+
+.historia h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #009ee3;
+    font-weight: bold;
+    text-align: left;
+}
+
+.historia p{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 130%;
+    color: #707070;
+    text-align: left;  
+}
+
+.historia-container{
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.historia-container div#accordion{
+    width: 100%;
+}
+
+.historia-container div.card-header{
+    background-color: #b7e5f9;
+}
+
+.historia-container .card-body{
+    background-color: #d5eef9;
+}
+
+.historia-container a.btn{
+    color: #009ee3;
+    font-weight: bold;
+}
+
+.historia-container h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #009ee3;
+    font-weight: bold;
+}
+
+.historia-container p{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 130%;
+    color: #707070;
+}
+
+
+
+
+.grid-galeria{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 200px 200px 200px; */
+    grid-auto-rows: 200px;
+    gap: 1em;
+}
+
+.img-1{
+    grid-column: span 2;
+}
+
+.img-3{
+    grid-row: span 2;
+}
+
+.img-5{
+    grid-row: span 2;
+}
+
+.img-8{
+    grid-column: span 2;
+}
+
+.grid-item{
+    position: relative;
+}
+
+.grid-item h3{
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    background-color: #0004;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 90px;
+}
+
+.contacto div{
+    width: 80%;
+
+}
+
+.contacto h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #009ee3;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 30px;
+    padding: 30px;
+}
+
+.contacto p{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 130%;
+    color: #707070;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+.contacto iframe{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/**-- FOOTER --*/
+
+
+footer {
+    background-color: #0005;
+    text-align: center;
+    vertical-align:middle;
+	padding-top:20px;
+	height:auto;
+}
+footer p{
+    font-size: 1em;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/*!-----Media Query-----*/
+
+
+@media screen and (max-width:1240px) {
+.hero{
+    height: 90vh;
+}
+
+.biografia{
+    height: 70vh;
+}
+    
+.biografia img{
+    width: 250px;
+}
+
+.historia{
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.historia img{
+    width: 300px;
+}
+
+.historia-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+}
+
+
+@media screen and (max-width:945px) {
+.grid-galeria{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+}
+
+.grid-item{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.historia{
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contacto{
+    flex-wrap: wrap;
+
+}
+
+}
+
+@media screen and (max-width:885px){
+.historia div{
+    width: 83%;
+}
+
+.historia img{
+    display: none;
+}
+
+.historia-container{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+}
+
+@media screen and (max-width:745px){
+.historia{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.historia-container{
+    width: 95%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+}
+
+@media screen and (max-width:735px){
+.hero-contenedor{
+    flex-direction: column;
+}
+
+.biografia{
+    flex-direction: column;
+    height: 50vh;
+}
+
+.biografia img{
+    display: none;
+}
+
+.biografia div{
+    width: 90%;
+}
+
+.biografia img{
+    width: 280px;
+    padding-bottom: 20px;
+}
+
+.historia{
+    margin-top: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.historia p{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 140%;
+    padding-top: 10px;     
+}
+
+.historia h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    text-align: left;
+    padding-top: 30px;
+}
+
+.historia-container{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+}
+
+@media screen and (max-width:630px) {
+.biografia{
+    flex-direction: column;
+}
+
+.biografia div p{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 120%;
+}
+
+.historia div{
+    width: 80%;
+}
+
+.historia{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.grid-galeria{
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media screen and (max-width:600px){
+.historia-container{
+    width: 80%;
+}   
+
+}
+
+@media screen and (max-width:580px) {
+.hero{
+    height: 85vh;
+}
+
+.hero img{
+    width: 175px;
+}
+
+}
+
+
+@media screen and (max-width:390px) {
+
+.navbar-logo img{
+    width: 250px;
+}
+
+.navbar-logo{
+    width: 200px;
+}
+
+.hero{
+    height: 80vh;
+}
+
+.hero a{
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+}
+
+.hero img{
+    width: 155px;
+}
+
+.biografia div{
+    width: 100%;
+}
+
+.biografia div h2{
+    font-size: clamp(1rem, 0.571rem + 1.2vi, 1.857rem);
+}
+
+}
