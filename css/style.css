@@ -317,7 +317,7 @@ nav .nav-link{
     padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 80px;
-    height: 80vh;
+    height: auto;
     text-align: center;
     background-image: url(../img/bg-futbol.jpg);
     background-size: cover;
@@ -787,12 +787,9 @@ footer p{
     width: 80%;
 }
 
-.resena-himno div h2{
-    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
-}
 
 .resena-himno .resena-contenedor div{
-    width: 100%;
+    width: 90%;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -826,7 +823,6 @@ footer p{
 }
 
 .resena-himno div h2{
-    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
     padding-left: 30px;
     padding-right: 30px; 
 }
