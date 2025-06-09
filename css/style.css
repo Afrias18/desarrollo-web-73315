@@ -54,6 +54,12 @@ header nav ul li a{
 } */
 
 
+.bg-celeste {
+    --bs-bg-opacity: 1;
+    background-color: rgb(0 158 227) !important;
+    filter: drop-shadow(0 3px 3px rgba(0,0,0,.3));
+}
+
 .navbar-logo{
     width: 280px;
 }
@@ -65,6 +71,7 @@ navbar{
     justify-content: space-around;
     align-items: center;
     z-index: 1;
+
 }
 
 nav .nav-link{
@@ -82,7 +89,7 @@ nav .nav-link{
     align-items: center;
     text-align: center;
     height: 90vh;
-    margin-top: 80px;
+    margin-top: 30px;
     background-image: url(../img/sportivo-barracas-fc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,28 +99,24 @@ nav .nav-link{
 
 
 .hero-contenedor{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     border: 4px solid #ffffff;
     width: 80%;
-    padding: 20px;
+    padding: 15px;
+    text-align: center;
     height: auto;
-    background-color: #fff8;
-    flex-wrap: wrap;
-
+    background-color: rgba(255, 255, 255, 0.700);
 }
 
 
-.hero h2{
+.hero-contenedor h2{
     font-size: 30px;
     text-align: center;
     vertical-align: middle;
-    color: #000000;
-    filter: drop-shadow(0 2px 2px rgba(255,255,255,.5));
+    color: #ffffff;
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.8));
 }
 
-.hero a{
+.hero-contenedor a{
     text-decoration: none;
     font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
     font-weight: bold;
@@ -124,14 +127,14 @@ nav .nav-link{
     margin: 10px 25px;
 }
 
-.hero a:hover{
+.hero-contenedor a:hover{
     text-decoration: none;
     font-style: italic;
     font-weight: bold;
     color: #053549;
 }
 
-.hero img{
+.hero-contenedor img{
     width: 200px;
     padding-top: 20px;
     filter: drop-shadow(0 8px 5px rgba(0,0,0,.3));
@@ -176,24 +179,19 @@ nav .nav-link{
 
 
 
-/* .subtitulos-temas{
-    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
-    color: #009ee3;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-} */
-
-
-
 .historia{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 120px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin-top: 80px;
+    background-image: url(../img/bg-cancha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .historia div{
@@ -202,6 +200,7 @@ nav .nav-link{
 
 .historia img{
     width: 350px;
+    filter: drop-shadow(0 8px 5px rgba(0,0,0,.3));
 }
 
 .historia h2{
@@ -214,14 +213,18 @@ nav .nav-link{
 .historia p{
     font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
     line-height: 130%;
-    color: #707070;
+    color: #000000;
     text-align: left;  
 }
 
 .historia-container{
     height: auto;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding: 40px 50px;
+    background-image: url(../img/bg-futbol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .historia-container div#accordion{
@@ -233,7 +236,7 @@ nav .nav-link{
 }
 
 .historia-container .card-body{
-    background-color: #d5eef9;
+    background-color: #ffffff;
 }
 
 .historia-container a.btn{
@@ -250,7 +253,11 @@ nav .nav-link{
 .historia-container p{
     font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
     line-height: 130%;
-    color: #707070;
+    color: #333333;
+}
+
+.card{
+    border: 1px solid #ffffff;
 }
 
 
@@ -260,7 +267,6 @@ nav .nav-link{
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 200px 200px 200px; */
     grid-auto-rows: 200px;
     gap: 1em;
     margin-top: 90px;
@@ -287,11 +293,13 @@ nav .nav-link{
 }
 
 .grid-item h3{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
     position: absolute;
     bottom: 0;
     color: #ffffff;
     text-align: center;
     font-weight: normal;
+    padding: 8px;
     width: 100%;
     background-color: #0004;
 }
@@ -304,13 +312,57 @@ nav .nav-link{
 
 
 
+.resena-himno{
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    height: 80vh;
+    text-align: center;
+    background-image: url(../img/bg-futbol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;    
+}
+
+.resena-himno .resena-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.resena-himno div h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #009ee3;
+    font-weight: bold;
+    text-align: center;   
+}
+
+.resena-himno .resena-contenedor div{
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.resena-himno .resena-contenedor div p{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 130%;
+    color: #333333;
+    text-align: left;   
+}
+
+
+
 .contacto{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-top: 90px;
 }
 
@@ -331,7 +383,7 @@ nav .nav-link{
 .contacto p{
     font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
     line-height: 130%;
-    color: #707070;
+    color: #000000;
     text-align: left;
     padding-left: 30px;
     padding-right: 30px; 
@@ -341,6 +393,7 @@ nav .nav-link{
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    border: 2px solid #009ee3;
 }
 
 
@@ -365,18 +418,48 @@ footer p{
 /*!-----Media Query-----*/
 
 
+@media screen and (max-width:1400px){
+.hero{
+    height: auto;
+    margin-top: 80px;
+    padding: 80px 50px;
+}
+
+.hero-contenedor{
+    height: auto;
+}
+
+.biografia img{
+    width: 180px;
+    height: 216px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}    
+}
+
+
+
 @media screen and (max-width:1240px) {
 .hero{
-    height: 90vh;
+    height: auto;
+    margin-top: 60px;
+    padding: 70px 50px;
+}
+
+.hero-contenedor{
+    height: auto;
 }
 
 .biografia{
-    height: 70vh;
+    height: 80vh;
 }
     
 .biografia img{
-    width: 250px;
-}
+    width: 180px;
+    height: 216px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
 
 .historia{
     margin-top: 100px;
@@ -394,8 +477,66 @@ footer p{
 }
 }
 
+@media screen and (max-width:991px){
+.hero{
+    height: auto;
+    margin-top: 40px;
+    padding: 70px 50px;
+}
+
+.hero img{
+    width: 180px;
+}
+
+
+.hero-contenedor{
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+}
+
+.biografia{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+.biografia div{
+    width: 90%;
+}
+
+.biografia img{
+    display: none;
+} 
+
+}
 
 @media screen and (max-width:945px) {
+.hero{
+    height: auto;
+    margin-top: 40px;
+    padding: 70px 50px;
+}
+
+.hero img{
+    width: 150px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 50%;
+}
+
+.biografia{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+.biografia div{
+    width: 90%;
+}
+
 .grid-galeria{
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 180px;
@@ -420,6 +561,7 @@ footer p{
 }
 
 @media screen and (max-width:885px){
+
 .historia div{
     width: 83%;
 }
@@ -429,50 +571,83 @@ footer p{
 }
 
 .historia-container{
-    padding-top: 15px;
+    height: auto;
+    padding: 15px 30px;
+}
+
+.biografia{
+    padding-top: 30px;
     padding-bottom: 30px;
+    height: auto;
+}
+
+.biografia div{
+    width: 80%;
 }
 
 }
 
 @media screen and (max-width:745px){
+.hero{
+    height: auto;
+    margin-top: 30px;
+    padding: 60px 40px;
+}
+
+.hero img{
+    width: 150px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 50%;
+}
+
 .historia{
+    height: auto;
     padding-top: 20px;
     padding-bottom: 15px;
 }
 
 .historia-container{
-    width: 95%;
-    padding-top: 15px;
+    height: auto;
+    padding: 15px 30px;
+}
+
+.biografia{
+    padding-top: 30px;
     padding-bottom: 30px;
+    height: auto;
+}
+
+.biografia div{
+    width: 80%;
 }
 
 }
 
 @media screen and (max-width:735px){
+.hero{
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 50px;
+}
+
+.hero img{
+    width: 140px;
+}
+
 .hero-contenedor{
-    flex-direction: column;
-}
-
-.biografia{
-    flex-direction: column;
-    height: 50vh;
-}
-
-.biografia img{
-    display: none;
+    height: auto;
+    width: 50%;
 }
 
 .biografia div{
-    width: 90%;
-}
-
-.biografia img{
-    width: 280px;
-    padding-bottom: 20px;
+    width: 80%;
 }
 
 .historia{
+    height: auto;
     margin-top: 75px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -491,15 +666,43 @@ footer p{
 }
 
 .historia-container{
-    padding-top: 15px;
-    padding-bottom: 30px;
+    height: auto;
+    padding: 15px 30px;
+}
+
+.resena-himno .resena-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resena-himno .resena-contenedor div{
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 }
 
 @media screen and (max-width:630px) {
-.biografia{
-    flex-direction: column;
+.hero{
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 40px;
+}
+
+.hero img{
+    width: 140px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 60%;
+}
+
+.biografia div{
+    width: 80%;
 }
 
 .biografia div p{
@@ -512,8 +715,14 @@ footer p{
 }
 
 .historia{
+    height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.historia-container{
+    height: auto;
+    padding: 15px 30px;
 }
 
 .grid-galeria{
@@ -523,25 +732,141 @@ footer p{
 }
 
 @media screen and (max-width:600px){
+.hero{
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 40px;
+}
+
+.hero img{
+    width: 140px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 60%;
+}
+
 .historia-container{
+    height: auto;
+    padding: 15px 30px;
+}
+
+.biografia div{
     width: 80%;
-}   
+}
 
 }
 
 @media screen and (max-width:580px) {
 .hero{
-    height: 85vh;
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 40px;
 }
 
 .hero img{
-    width: 175px;
+    width: 140px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 60%;
+}
+
+.hero-contenedor h2{
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+}
+
+.historia-container{
+    height: auto;
+    padding: 15px 30px;
+}
+
+.biografia div{
+    width: 80%;
+}
+
+.resena-himno div h2{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+}
+
+.resena-himno .resena-contenedor div{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+}
+
+@media screen and (max-width:500px) {
+.hero{
+    height: auto;
+    margin-top: 40px;
+    padding: 50px 30px;
+}
+
+.hero img{
+    width: 140px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 70%;
+}
+
+.biografia div{
+    width: 80%;
+}
+
+.historia-container{
+    height: auto;
+    padding: 15px 30px;
+}
+
+.resena-himno div h2{
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+.resena-himno div h3{
+    padding-left: 30px;
+    padding-right: 30px; 
 }
 
 }
 
 
 @media screen and (max-width:390px) {
+.hero{
+    height: auto;
+    margin-top: 30px;
+    padding: 50px 30px;
+}
+
+.hero img{
+    width: 140px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 80%;
+}
+
+.hero a{
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+}
+
+.biografia div{
+    width: 60%;
+}
+
+.historia-container{
+    height: auto;
+    padding: 15px 30px;
+}
 
 .navbar-logo img{
     width: 250px;
@@ -551,24 +876,32 @@ footer p{
     width: 200px;
 }
 
-.hero{
-    height: 80vh;
-}
-
-.hero a{
-    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
-}
-
-.hero img{
-    width: 155px;
-}
 
 .biografia div{
-    width: 100%;
+    width: 80%;
 }
 
 .biografia div h2{
     font-size: clamp(1rem, 0.571rem + 1.2vi, 1.857rem);
+}
+
+}
+
+@media screen and (max-width:350px) {
+.hero{
+    height: auto;
+    margin-top: 30px;
+    padding: 50px 20px;
+}
+
+.hero-contenedor{
+    height: auto;
+    width: 80%;
+}
+
+.historia-container{
+    height: auto;
+    padding: 15px 30px;
 }
 
 }
