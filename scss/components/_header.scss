@@ -1,0 +1,26 @@
+
+/*!-- HEADER -- */
+
+
+navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.navbar-logo {
+    width: 280px;
+}
+
+.bg-celeste {
+    --bs-bg-opacity: 1;
+    background-color: $COLOR-PRIMARIO !important;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .3));
+}
+
+nav .nav-link {
+    color: $COLOR-TERCIARIO;
+}

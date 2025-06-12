@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+}
+
+/*!-- HEADER -- */
+navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar-logo {
+  width: 280px;
+}
+
+.bg-celeste {
+  --bs-bg-opacity: 1;
+  background-color: #009ee3 !important;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+nav .nav-link {
+  color: #ffffff;
+}
+
+/*--Index--*/
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  margin-top: 30px;
+  background-image: url(../img/sportivo-barracas-fc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.hero .hero-contenedor {
+  border: 4px solid #ffffff;
+  width: 80%;
+  padding: 15px;
+  text-align: center;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.hero .hero-contenedor h1 {
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.8));
+}
+.hero .hero-contenedor a {
+  text-decoration: none;
+  font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #009ee3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 25px;
+}
+.hero .hero-contenedor a:hover {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  color: #053549;
+}
+.hero .hero-contenedor img {
+  width: 200px;
+  padding-top: 20px;
+  filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.3));
+}
+
+.biografia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
+  background-image: url(../img/cancha-atardecer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.biografia img {
+  width: 300px;
+}
+.biografia div {
+  width: 50%;
+}
+.biografia div h2 {
+  font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+  color: #ffffff;
+  text-align: left;
+}
+.biografia div p {
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+  line-height: 140%;
+  color: #ffffff;
+  text-align: left;
+}
+
+.historia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin-top: 80px;
+  background-image: url(../img/bg-cancha.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.historia img {
+  width: 350px;
+  filter: drop-shadow(0 8px 5px rgba(0, 0, 0, 0.3));
+}
+.historia div {
+  width: 50%;
+}
+.historia div h2 {
+  font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+  color: #009ee3;
+  font-weight: bold;
+  text-align: left;
+}
+.historia div p {
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+  line-height: 130%;
+  color: #000000;
+  text-align: left;
+}
+.historia .historia-container {
+  height: auto;
+  padding: 40px 50px;
+  background-image: url(../img/bg-futbol.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.historia .historia-container div#accordion {
+  width: 100%;
+}
+.historia .historia-container div.card-header {
+  background-color: #b7e5f9;
+}
+.historia .historia-container .card-body {
+  background-color: #ffffff;
+}
+.historia .historia-container .card {
+  border: 1px solid #ffffff;
+}
+.historia .historia-container a.btn {
+  color: #009ee3;
+  font-weight: bold;
+}
+.historia .historia-container h2 {
+  font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+  color: #009ee3;
+  font-weight: bold;
+}
+.historia .historia-container p {
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+  line-height: 130%;
+  color: #333333;
+}
+
+.grid-galeria {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 1em;
+  margin-top: 90px;
+}
+.grid-galeria div .grid-item {
+  position: relative;
+}
+.grid-galeria div .grid-item h3 {
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;
+  padding: 8px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2666666667);
+}
+.grid-galeria div .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-galeria div .img-1 {
+  grid-column: span 2;
+}
+.grid-galeria div .img-3 {
+  grid-row: span 2;
+}
+.grid-galeria div .img-5 {
+  grid-row: span 2;
+}
+.grid-galeria div .img-8 {
+  grid-column: span 2;
+}
+
+.resena-himno {
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+  height: auto;
+  text-align: center;
+  background-image: url(../img/bg-futbol.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.resena-himno div h2 {
+  font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+  color: #009ee3;
+  font-weight: bold;
+  text-align: center;
+}
+.resena-himno div h2 span {
+  font-weight: bold;
+}
+.resena-himno .resena-contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.resena-himno .resena-contenedor div {
+  width: 50%;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.resena-himno .resena-contenedor div p {
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+  line-height: 130%;
+  color: #333333;
+  text-align: left;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 90px;
+}
+.contacto iframe {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #009ee3;
+}
+.contacto div {
+  width: 80%;
+}
+.contacto div h2 {
+  font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+  color: #009ee3;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 30px;
+  padding: 30px;
+}
+.contacto div p {
+  font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+  line-height: 130%;
+  color: #000000;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/**-- FOOTER --*/
+footer {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 20px;
+  height: auto;
+}
+footer p {
+  font-size: 1em;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero {
+    height: auto;
+    margin-top: 80px;
+    padding: 80px 50px;
+  }
+  .hero-contenedor {
+    height: auto;
+  }
+  .biografia img {
+    width: 180px;
+    height: 216px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .hero {
+    height: auto;
+    margin-top: 60px;
+    padding: 70px 50px;
+  }
+  .hero-contenedor {
+    height: auto;
+  }
+  .biografia {
+    height: 80vh;
+  }
+  .biografia img {
+    width: 180px;
+    height: 216px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .historia {
+    margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .historia img {
+    width: 300px;
+  }
+  .historia-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero {
+    height: auto;
+    margin-top: 40px;
+    padding: 70px 50px;
+  }
+  .hero img {
+    width: 180px;
+  }
+  .hero-contenedor {
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+  }
+  .biografia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+  .biografia div {
+    width: 90%;
+  }
+  .biografia img {
+    display: none;
+  }
+}
+@media screen and (max-width: 945px) {
+  .hero {
+    height: auto;
+    margin-top: 40px;
+    padding: 70px 50px;
+  }
+  .hero img {
+    width: 150px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 60%;
+  }
+  .biografia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+  .biografia div {
+    width: 90%;
+  }
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .historia {
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contacto {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 885px) {
+  .hero-contenedor {
+    height: auto;
+    width: 70%;
+  }
+  .historia div {
+    width: 83%;
+  }
+  .historia img {
+    display: none;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .biografia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+  .biografia div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 745px) {
+  .hero {
+    height: auto;
+    margin-top: 30px;
+    padding: 60px 40px;
+  }
+  .hero img {
+    width: 150px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 70%;
+  }
+  .historia {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .biografia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+  .biografia div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 735px) {
+  .hero {
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 50px;
+  }
+  .hero img {
+    width: 140px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 70%;
+  }
+  .biografia div {
+    width: 80%;
+  }
+  .historia {
+    height: auto;
+    margin-top: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .historia p {
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 140%;
+    padding-top: 10px;
+  }
+  .historia h2 {
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    text-align: left;
+    padding-top: 30px;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .resena-himno .resena-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .resena-himno .resena-contenedor div {
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .hero {
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 40px;
+  }
+  .hero img {
+    width: 140px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 70%;
+  }
+  .biografia div {
+    width: 80%;
+  }
+  .biografia div p {
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+    line-height: 120%;
+  }
+  .historia div {
+    width: 80%;
+  }
+  .historia {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 40px;
+  }
+  .hero img {
+    width: 140px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 70%;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .biografia div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .hero {
+    height: auto;
+    margin-top: 40px;
+    padding: 60px 40px;
+  }
+  .hero img {
+    width: 140px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 60%;
+  }
+  .hero-contenedor h1 {
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .biografia div {
+    width: 80%;
+  }
+  .resena-himno .resena-contenedor div {
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    height: auto;
+    margin-top: 40px;
+    padding: 50px 30px;
+  }
+  .hero img {
+    width: 140px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 70%;
+  }
+  .hero-contenedor h1 {
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+  }
+  .biografia div {
+    width: 80%;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .resena-himno div h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .resena-himno div h3 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero {
+    height: auto;
+    margin-top: 30px;
+    padding: 50px 30px;
+  }
+  .hero img {
+    width: 140px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 80%;
+  }
+  .hero-contenedor h1 {
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+  }
+  .hero a {
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+  }
+  .biografia div {
+    width: 60%;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+  .navbar-logo img {
+    width: 250px;
+  }
+  .navbar-logo {
+    width: 200px;
+  }
+  .biografia div {
+    width: 80%;
+  }
+  .biografia div h2 {
+    font-size: clamp(1rem, 0.571rem + 1.2vi, 1.857rem);
+  }
+}
+@media screen and (max-width: 350px) {
+  .hero {
+    height: auto;
+    margin-top: 30px;
+    padding: 50px 20px;
+  }
+  .hero-contenedor {
+    height: auto;
+    width: 80%;
+  }
+  .historia-container {
+    height: auto;
+    padding: 15px 30px;
+  }
+}
+
+/*# sourceMappingURL=Etilo-Sportivo.css.map */

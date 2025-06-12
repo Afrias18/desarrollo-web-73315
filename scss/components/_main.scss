@@ -1,0 +1,319 @@
+
+/*--Index--*/
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    margin-top: 30px;
+    background-image: url(../img/sportivo-barracas-fc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .hero-contenedor {
+        border: 4px solid #ffffff;
+        width: 80%;
+        padding: 15px;
+        text-align: center;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.700);
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            vertical-align: middle;
+            color: #ffffff;
+            filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.8));
+        }
+
+        a {
+            text-decoration: none;
+            font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #009ee3;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px 25px;
+
+            &:hover {
+                text-decoration: none;
+                font-style: italic;
+                font-weight: bold;
+                color: #053549;
+            }
+        }
+
+        img {
+            width: 200px;
+            padding-top: 20px;
+            filter: drop-shadow(0 8px 5px rgba(0, 0, 0, .3));
+        }
+
+    }
+
+
+}
+
+.biografia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    background-image: url(../img/cancha-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    img {
+        width: 300px;
+    }
+
+    div {
+        width: 50%;
+
+        h2 {
+            font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+            color: #ffffff;
+            text-align: left;
+        }
+
+        p {
+            font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+            line-height: 140%;
+            color: #ffffff;
+            text-align: left;
+        }
+    }
+
+}
+
+
+.historia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin-top: 80px;
+    background-image: url(../img/bg-cancha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    img {
+        width: 350px;
+        filter: drop-shadow(0 8px 5px rgba(0, 0, 0, .3));
+    }
+
+    div {
+        width: 50%;
+
+        h2 {
+            font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+            color: #009ee3;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        p {
+            font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+            line-height: 130%;
+            color: #000000;
+            text-align: left;
+        }
+
+    }
+
+    .historia-container {
+        height: auto;
+        padding: 40px 50px;
+        background-image: url(../img/bg-futbol.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+
+        div#accordion {
+            width: 100%;
+        }
+
+        div.card-header {
+            background-color: #b7e5f9;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+        }
+
+        .card {
+            border: 1px solid #ffffff;
+        }
+
+        a.btn {
+            color: #009ee3;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+            color: #009ee3;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+            line-height: 130%;
+            color: #333333;
+        }
+
+    }
+}
+
+
+.grid-galeria {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 1em;
+    margin-top: 90px;
+
+    div {
+        .grid-item {
+            position: relative;
+
+            h3 {
+                font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+                position: absolute;
+                bottom: 0;
+                color: #ffffff;
+                text-align: center;
+                font-weight: normal;
+                padding: 8px;
+                width: 100%;
+                background-color: #0004;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .img-1 {
+            grid-column: span 2;
+        }
+
+        .img-3 {
+            grid-row: span 2;
+        }
+
+        .img-5 {
+            grid-row: span 2;
+        }
+
+        .img-8 {
+            grid-column: span 2;
+        }
+
+    }
+
+
+}
+
+.resena-himno {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    height: auto;
+    text-align: center;
+    background-image: url(../img/bg-futbol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    div {
+        h2 {
+            font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+            color: #009ee3;
+            font-weight: bold;
+            text-align: center;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .resena-contenedor {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        div {
+            width: 50%;
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            p {
+                font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+                line-height: 130%;
+                color: #333333;
+                text-align: left;
+            }
+        }
+
+    }
+}
+
+
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 90px;
+
+    iframe {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 2px solid #009ee3;
+    }
+
+    div {
+        width: 80%;
+
+        h2 {
+            font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+            color: #009ee3;
+            font-weight: bold;
+            text-align: left;
+            padding-top: 30px;
+            padding: 30px;
+        }
+
+        p {
+            font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+            line-height: 130%;
+            color: #000000;
+            text-align: left;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
