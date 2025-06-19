@@ -316,6 +316,7 @@
     grid-template-columns: 1fr;
 }
 
+
 }
 
 
@@ -344,6 +345,7 @@
     width: 80%;
 }
 
+
 }
 
 
@@ -355,7 +357,7 @@
 }
 
 .hero img{
-    width: 140px;
+    width: 130px;
 }
 
 .hero-contenedor{
@@ -384,6 +386,7 @@
     padding-right: 30px;
 }
 
+
 }
 
 
@@ -395,7 +398,7 @@
 }
 
 .hero img{
-    width: 140px;
+    width: 130px;
 }
 
 .hero-contenedor{
@@ -426,6 +429,7 @@
     padding-right: 30px; 
 }
 
+
 }
 
 
@@ -437,7 +441,7 @@
 }
 
 .hero img{
-    width: 140px;
+    width: 120px;
 }
 
 .hero-contenedor{
@@ -479,6 +483,7 @@
     font-size: clamp(1rem, 0.571rem + 1.2vi, 1.857rem);
 }
 
+
 }
 
 
@@ -487,6 +492,10 @@
     height: auto;
     margin-top: 30px;
     padding: 50px 20px;
+}
+
+.hero img{
+    width: 120px;
 }
 
 .hero-contenedor{

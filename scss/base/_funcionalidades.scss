@@ -5,8 +5,9 @@ $COLOR-TERCIARIO:#ffffff;
 
 
 //* LISTAS
-
-
+$font-size-primario: clamp(0.8rem, 0.411rem + 1.556vi, 1.5rem);
+$font-size-secundario: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+$font-size-parrafo: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
 
 //* EXTENDS
 

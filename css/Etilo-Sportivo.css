@@ -49,7 +49,7 @@ nav .nav-link {
 .hero .hero-contenedor {
   border: 4px solid #ffffff;
   width: 80%;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   height: auto;
   background-color: rgba(255, 255, 255, 0.7);
@@ -145,7 +145,8 @@ nav .nav-link {
   color: #000000;
   text-align: left;
 }
-.historia .historia-container {
+
+.historia-container {
   height: auto;
   padding: 40px 50px;
   background-image: url(../img/bg-futbol.jpg);
@@ -154,28 +155,28 @@ nav .nav-link {
   background-position: center center;
   background-attachment: fixed;
 }
-.historia .historia-container div#accordion {
+.historia-container div#accordion {
   width: 100%;
 }
-.historia .historia-container div.card-header {
+.historia-container div.card-header {
   background-color: #b7e5f9;
 }
-.historia .historia-container .card-body {
+.historia-container .card-body {
   background-color: #ffffff;
 }
-.historia .historia-container .card {
+.historia-container .card {
   border: 1px solid #ffffff;
 }
-.historia .historia-container a.btn {
+.historia-container a.btn {
   color: #009ee3;
   font-weight: bold;
 }
-.historia .historia-container h2 {
+.historia-container h2 {
   font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
   color: #009ee3;
   font-weight: bold;
 }
-.historia .historia-container p {
+.historia-container p {
   font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
   line-height: 130%;
   color: #333333;
@@ -189,10 +190,22 @@ nav .nav-link {
   gap: 1em;
   margin-top: 90px;
 }
-.grid-galeria div .grid-item {
+.grid-galeria .img-1 {
+  grid-column: span 2;
+}
+.grid-galeria .img-3 {
+  grid-row: span 2;
+}
+.grid-galeria .img-5 {
+  grid-row: span 2;
+}
+.grid-galeria .img-8 {
+  grid-column: span 2;
+}
+.grid-galeria .grid-item {
   position: relative;
 }
-.grid-galeria div .grid-item h3 {
+.grid-galeria div h3 {
   font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
   position: absolute;
   bottom: 0;
@@ -203,29 +216,17 @@ nav .nav-link {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2666666667);
 }
-.grid-galeria div .grid-item img {
+.grid-galeria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.grid-galeria div .img-1 {
-  grid-column: span 2;
-}
-.grid-galeria div .img-3 {
-  grid-row: span 2;
-}
-.grid-galeria div .img-5 {
-  grid-row: span 2;
-}
-.grid-galeria div .img-8 {
-  grid-column: span 2;
 }
 
 .resena-himno {
   height: auto;
   padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 80px;
+  padding-bottom: 50px;
+  margin-top: 90px;
   height: auto;
   text-align: center;
   background-image: url(../img/bg-futbol.jpg);
@@ -250,13 +251,11 @@ nav .nav-link {
 }
 .resena-himno .resena-contenedor div {
   width: 50%;
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 50px 70px;
 }
 .resena-himno .resena-contenedor div p {
   font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
-  line-height: 130%;
+  line-height: 160%;
   color: #333333;
   text-align: left;
 }
@@ -589,7 +588,7 @@ footer p {
     padding: 60px 40px;
   }
   .hero img {
-    width: 140px;
+    width: 130px;
   }
   .hero-contenedor {
     height: auto;
@@ -619,7 +618,7 @@ footer p {
     padding: 50px 30px;
   }
   .hero img {
-    width: 140px;
+    width: 130px;
   }
   .hero-contenedor {
     height: auto;
@@ -651,7 +650,7 @@ footer p {
     padding: 50px 30px;
   }
   .hero img {
-    width: 140px;
+    width: 120px;
   }
   .hero-contenedor {
     height: auto;
@@ -688,6 +687,9 @@ footer p {
     height: auto;
     margin-top: 30px;
     padding: 50px 20px;
+  }
+  .hero img {
+    width: 120px;
   }
   .hero-contenedor {
     height: auto;
