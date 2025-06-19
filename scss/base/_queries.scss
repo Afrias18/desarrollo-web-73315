@@ -123,8 +123,7 @@
 }
 
 .grid-item{
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: 1/span 2;
 }
 
 .historia{
@@ -312,9 +311,6 @@
     padding: 15px 30px;
 }
 
-.grid-galeria{
-    grid-template-columns: 1fr;
-}
 
 
 }
