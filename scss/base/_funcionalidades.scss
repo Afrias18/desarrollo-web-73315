@@ -2,15 +2,31 @@
 $COLOR-PRIMARIO:#009ee3;
 $COLOR-SECUNDARIO: #000000;
 $COLOR-TERCIARIO:#ffffff;
+$COLOR-CUARTO:#333333;
 
 
 //* LISTAS
-$font-size-primario: clamp(0.8rem, 0.411rem + 1.556vi, 1.5rem);
+$font-size-principal: clamp(0.8rem, 0.411rem + 1.556vi, 1.5rem);
 $font-size-secundario: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
 $font-size-parrafo: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
 
-//* EXTENDS
 
+//* EXTENDS
+%boton{
+    font-size: clamp(1.071rem, 0.893rem + 0.5vi, 1.429rem);
+    font-weight: bold;
+    background-color: #009ee3;
+    text-decoration: none;
+    color: $COLOR-TERCIARIO;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 25px;
+}
 
 
 //* MIXINS
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

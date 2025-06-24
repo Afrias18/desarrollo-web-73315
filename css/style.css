@@ -127,6 +127,12 @@ nav .nav-link{
     text-align: left;
 }
 
+.biografia div h2::first-letter{
+    font-size: clamp(1rem, 0.083rem + 2.75vi, 2.222rem);
+    color: #ededed;
+    font-weight: bold;
+}
+
 .biografia div p{
     font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
     line-height: 140%;
@@ -325,10 +331,9 @@ nav .nav-link{
 }
 
 .contacto iframe{
-    width: 100%;
+    width: 80%;
     padding-left: 20px;
     padding-right: 20px;
-    border: 2px solid #009ee3;
 }
 
 .contacto div{
@@ -357,6 +362,20 @@ nav .nav-link{
     padding-right: 30px; 
 }
 
+.conytacto img{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.contacto .contiene-pelota{
+    transition: 2s ease-in-out;
+}
+
+.contiene-pelota:hover{
+    transform: rotate(360deg);
+}
+
+
 
 
 /**-- FOOTER --*/
@@ -371,7 +390,7 @@ footer {
 }
 footer p{
     font-size: 1em;
-    color: #000000;
+    color: #333333;
     padding-top: 10px;
     padding-bottom: 20px;
 }
