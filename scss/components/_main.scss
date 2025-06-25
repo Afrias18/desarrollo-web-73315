@@ -307,12 +307,25 @@
             text-align: left;
             padding-left: 30px;
             padding-right: 30px;
+            span {
+                font-weight: bold;
+                color: $COLOR-SECUNDARIO;
+            }
         }
 
         img{
             padding-left: 30px;
         }
-
+        .translate div{
+            width: 100%;
+            height: 100%;
+        }
+        .pelota{
+            transition: 2s;
+        }
+        .pelota:hover {
+            transform: translateX(250px);
+        }
 
     }
 
