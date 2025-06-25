@@ -220,6 +220,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 12px;        
     }
 
 
@@ -282,13 +283,13 @@
     background: linear-gradient(-90deg,rgba(0, 158, 227, 1) 35%, rgba(255, 255, 255, 1) 100%);
 
     iframe {
-        width: 80%;
+        width: 100%;
         padding-left: 40px;
         padding-right: 20px;
     }
 
     div {
-        width: 80%;
+        width: 50%;
 
         h2 {
             font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
@@ -316,16 +317,35 @@
         img{
             padding-left: 30px;
         }
-        .translate div{
+        .translate{
             width: 100%;
             height: 100%;
+            position: relative;
         }
-        .pelota{
-            transition: 2s;
+        .ball {
+            width: 60px;
+            height: 60px;
+            background-image: url("../img/ball.png");
+            background-size: cover;
+            animation: move-ball 2s linear infinite alternate;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            translate: 0 -50%;
+            rotate: 0deg;
+
         }
-        .pelota:hover {
-            transform: translateX(250px);
-        }
+        @keyframes move-ball {
+            0% {
+            left: 0;
+            rotate: 0deg
+            }
+
+            100% {
+            left: calc(280px);
+            rotate: 720deg
+            }
+        }        
 
     }
 

@@ -230,6 +230,7 @@ nav .nav-link {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .resena-himno {
@@ -282,12 +283,12 @@ nav .nav-link {
   background: linear-gradient(-90deg, rgb(0, 158, 227) 35%, rgb(255, 255, 255) 100%);
 }
 .contacto iframe {
-  width: 80%;
+  width: 100%;
   padding-left: 40px;
   padding-right: 20px;
 }
 .contacto div {
-  width: 80%;
+  width: 50%;
 }
 .contacto div h2 {
   font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
@@ -313,15 +314,32 @@ nav .nav-link {
 .contacto div img {
   padding-left: 30px;
 }
-.contacto div .translate div {
+.contacto div .translate {
   width: 100%;
   height: 100%;
+  position: relative;
 }
-.contacto div .pelota {
-  transition: 2s;
+.contacto div .ball {
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/ball.png");
+  background-size: cover;
+  animation: move-ball 2s linear infinite alternate;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+  rotate: 0deg;
 }
-.contacto div .pelota:hover {
-  transform: translateX(250px);
+@keyframes move-ball {
+  0% {
+    left: 0;
+    rotate: 0deg;
+  }
+  100% {
+    left: 280px;
+    rotate: 720deg;
+  }
 }
 
 /**-- FOOTER --*/
