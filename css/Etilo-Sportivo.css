@@ -77,7 +77,6 @@ nav .nav-link {
 }
 .hero .hero-contenedor a:hover {
   text-decoration: none;
-  font-style: italic;
   font-weight: bold;
   color: #053549;
 }
@@ -111,7 +110,7 @@ nav .nav-link {
 }
 .biografia div h2::first-letter {
   font-size: clamp(1.125rem, 0.083rem + 2.75vi, 2.222rem);
-  color: #ededed;
+  color: #1e77fe;
   font-weight: bold;
 }
 .biografia div p {

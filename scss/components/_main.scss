@@ -33,7 +33,6 @@
             transition: 0.5s;
                 &:hover {
                     text-decoration: none;
-                    font-style: italic;
                     font-weight: bold;
                     color: #053549;
             }
@@ -72,7 +71,7 @@
             text-align: left;
             &::first-letter {
                 font-size: clamp(1.125rem, 0.083rem + 2.75vi, 2.222rem);
-                color: #ededed;
+                color: #1e77fe;
                 font-weight: bold;
             }
         }
