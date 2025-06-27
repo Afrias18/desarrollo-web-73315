@@ -14,7 +14,13 @@
     height: 216px;
     margin-top: 10px;
     margin-bottom: 10px;
-}    
+}
+
+.contacto div{
+    width: 80%;
+    text-align: center;
+}
+
 }
 
 
@@ -54,6 +60,18 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.contacto div{
+    width: 80%;
+    text-align: center;
+}
+
+.contacto iframe {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+
 }
 
 @media screen and (max-width:991px){
@@ -81,12 +99,31 @@
 }
 
 .biografia div{
-    width: 90%;
+    width: 80%;
 }
 
 .biografia img{
     display: none;
-} 
+}
+
+.contacto{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #009EE3;
+    background: linear-gradient(0deg,rgba(0, 158, 227, 1) 35%, rgba(255, 255, 255, 1) 100%);
+
+}
+
+.contacto div{
+    width: 80%;
+    text-align: center;
+}
+
+.contacto iframe {
+    padding-left: 0;
+    padding-right: 20px;
+}
 
 }
 
@@ -132,22 +169,18 @@
     padding-bottom: 20px;
 }
 
-.contacto{
-    flex-wrap: wrap;
-
-}
-
 }
 
 
 @media screen and (max-width:885px){
-.hero-contenedor{
-    height: auto;
-    width: 70%;
-}
 
 .historia div{
-    width: 83%;
+    width: 78%;
+}
+
+.hero-contenedor{
+    width: 90%;
+    height: auto;
 }
 
 .historia img{
@@ -167,6 +200,18 @@
 
 .biografia div{
     width: 80%;
+}
+
+.biografia div h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #ffffff;
+    text-align: left;
+}
+
+.biografia div h2::first-letter{
+    font-size: clamp(1rem, 0.83rem + 2.75vi, 2.222rem);
+    color: #1e77fe;
+    font-weight: bold;
 }
 
 }
@@ -194,6 +239,7 @@
     padding-bottom: 15px;
 }
 
+
 .historia-container{
     height: auto;
     padding: 15px 30px;
@@ -207,6 +253,18 @@
 
 .biografia div{
     width: 80%;
+}
+
+.biografia div h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #ffffff;
+    text-align: left;
+}
+
+.biografia div h2::first-letter{
+    font-size: clamp(1rem, 0.83rem + 2.75vi, 2.222rem);
+    color: #1e77fe;
+    font-weight: bold;
 }
 
 }
@@ -229,6 +287,18 @@
 
 .biografia div{
     width: 80%;
+}
+
+.biografia div h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #ffffff;
+    text-align: left;
+}
+
+.biografia div h2::first-letter{
+    font-size: clamp(1rem, 0.83rem + 2.75vi, 2.222rem);
+    color: #1e77fe;
+    font-weight: bold;
 }
 
 .historia{
@@ -296,8 +366,20 @@
     line-height: 120%;
 }
 
+.biografia div h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #ffffff;
+    text-align: left;
+}
+
+.biografia div h2::first-letter{
+    font-size: clamp(1rem, 0.83rem + 2.75vi, 2.222rem);
+    color: #1e77fe;
+    font-weight: bold;
+}
+
 .historia div{
-    width: 80%;
+    width: 81%;
 }
 
 .historia{
@@ -332,6 +414,10 @@
     width: 70%;
 }
 
+.historia div{
+    width: 85%;
+}
+
 .historia-container{
     height: auto;
     padding: 15px 30px;
@@ -341,6 +427,27 @@
     width: 80%;
 }
 
+.biografia div h2{
+    font-size: clamp(1.125rem, 0.875rem + 0.8vi, 1.625rem);
+    color: #ffffff;
+    text-align: left;
+}
+
+.biografia div h2::first-letter{
+    font-size: clamp(1rem, 0.83rem + 2.75vi, 2.222rem);
+    color: #1e77fe;
+    font-weight: bold;
+}
+
+.contacto div{
+    width: 80%;
+    text-align: center;
+}
+
+.contacto iframe {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 }
 
@@ -353,7 +460,7 @@
 }
 
 .hero img{
-    width: 130px;
+    width: 120px;
 }
 
 .hero-contenedor{
@@ -394,7 +501,7 @@
 }
 
 .hero img{
-    width: 130px;
+    width: 120px;
 }
 
 .hero-contenedor{
@@ -408,6 +515,10 @@
 
 .biografia div{
     width: 80%;
+}
+
+.historia div{
+    width: 82%;
 }
 
 .historia-container{
@@ -437,7 +548,7 @@
 }
 
 .hero img{
-    width: 120px;
+    width: 100px;
 }
 
 .hero-contenedor{
@@ -455,6 +566,10 @@
 
 .biografia div{
     width: 60%;
+}
+
+.historia div{
+    width: 78%;
 }
 
 .historia-container{
@@ -479,6 +594,9 @@
     font-size: clamp(1rem, 0.571rem + 1.2vi, 1.857rem);
 }
 
+.contacto div .traslate{
+    display: none;
+}
 
 }
 
@@ -491,7 +609,7 @@
 }
 
 .hero img{
-    width: 120px;
+    width: 80px;
 }
 
 .hero-contenedor{

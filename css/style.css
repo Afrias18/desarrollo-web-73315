@@ -367,13 +367,34 @@ nav .nav-link{
     padding-top: 30px;
 }
 
-.contacto .contiene-pelota{
-    transition: 2s ease-in-out;
+.contacto div .traslate{
+    min-height: 100px;
+    position: relative;
+}
+.contacto div .ball{
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/ball.png");
+    background-size: cover;
+    animation: move-ball 2s linear infinite alternate;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+    rotate: 0deg;
 }
 
-.contiene-pelota:hover{
-    transform: rotate(360deg);
-}
+@keyframes move-ball {
+    0% {
+    left: 0;
+    rotate: 0deg
+    }
+
+    100% {
+    left: calc(280px);
+    rotate: 720deg
+    }
+}        
 
 
 
@@ -456,6 +477,12 @@ footer p{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.contacto{
+    flex-direction: column;
+
+}
+
 }
 
 @media screen and (max-width:991px){
