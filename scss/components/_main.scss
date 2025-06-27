@@ -201,18 +201,18 @@
     }
     
     div{
-            h3 {
-                font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
-                filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.6));
-                position: absolute;
-                bottom: 0;
-                color: $COLOR-TERCIARIO;
-                text-align: center;
-                font-weight: normal;
-                padding: 8px;
-                width: 100%;
-                background-color: #009fe37b;
-            }
+        h3 {
+            font-size: clamp(1rem, 0.875rem + 0.4vi, 1.25rem);
+            filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.6));
+            position: absolute;
+            bottom: 0;
+            color: $COLOR-TERCIARIO;
+            text-align: center;
+            font-weight: normal;
+            padding: 8px;
+            width: 100%;
+            background-color: #009fe37b;
+        }
             
     }
 
